@@ -8,7 +8,7 @@ var app = app || {};
        model: app.Todo,
 
        // set rails backend
-       url: 'http://localhost:3000/todos',
+       url: 'http://localhost:8000/todos',
 
        // filter list of completed todo items
        completed: function(){
@@ -26,7 +26,7 @@ var app = app || {};
        },
 
        // Todos are sorted by their original insertion order.
-       comparator: 'order';
+       comparator: 'order'
    });
    app.todos = new Todos();
 })();
